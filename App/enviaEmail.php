@@ -34,7 +34,7 @@
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
     //Necessário inserir a chave
-    $apiKey = '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';
+    $apiKey = 'YOUR API KEY';
     $sg = new \SendGrid($apiKey);
 
     $response = $sg->client->mail()->send()->post($mail);
